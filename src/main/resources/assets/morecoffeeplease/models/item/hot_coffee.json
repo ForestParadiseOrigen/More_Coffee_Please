@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "morecoffeeplease:item/hot_coffee"
+  }
+}
