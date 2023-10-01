@@ -27,7 +27,7 @@ displayName="¡More Coffee Please!" #mandatory
 # A URL for the "homepage" for this mod, displayed in the mod UI
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
-logoFile="coffee.png" #optional
+logoFile="" #optional
 # A text field displayed in the mod UI
 credits="This mod has modded thanks to: moddingtutorials.org and Modding by Kaupenjoe" #optional
 # A text field displayed in the mod UI
@@ -53,6 +53,6 @@ More coffee with a lot of effects of speed, fire resistens and more...
     modId="minecraft"
     mandatory=true
 # This version range declares a minimum of the current minecraft version up to but not including the next major version
-    versionRange="[1.16.5)"
+    versionRange="[1.16.5,1.17)"
     ordering="NONE"
     side="BOTH"

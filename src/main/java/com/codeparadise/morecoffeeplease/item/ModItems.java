@@ -3,10 +3,8 @@ package com.codeparadise.morecoffeeplease.item;
 import com.codeparadise.morecoffeeplease.MoreCoffeePlease;
 import net.minecraft.item.Food;
 import net.minecraft.item.Item;
-// import net.minecraft.item.ItemGroup;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
-// import net.minecraftforge.event.entity.item.ItemEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -41,6 +39,22 @@ public class ModItems {
                             .saturationMod(2)
                             .alwaysEat()
                             .effect(new EffectInstance(Effects.FIRE_RESISTANCE, 600, 0), 1.0F)
+                            .effect(new EffectInstance(Effects.MOVEMENT_SPEED,600,0),1.0F)
+                            .build()
+                    )
+            )
+    );
+
+    // Miner coffee
+    public static final RegistryObject<Item> MINER_COFFEE = ITEMS.register("miner_coffee",
+            () -> new Item(new Item.Properties()
+                    .tab(ModItemGroup.COFFEE_GROUP)
+                    .stacksTo(1)
+                    .food(new Food.Builder()
+                            .nutrition(4)
+                            .saturationMod(2)
+                            .alwaysEat()
+                            .effect(new EffectInstance(Effects.DIG_SPEED,600,0),1.0F)
                             .effect(new EffectInstance(Effects.MOVEMENT_SPEED,600,0),1.0F)
                             .build()
                     )
